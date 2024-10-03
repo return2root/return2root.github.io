@@ -96,3 +96,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     renderArticles();
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const loginForm = document.getElementById('login-form');
+
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Here you can add your login logic, e.g., sending the credentials to a server
+        console.log('Username:', username);
+        console.log('Password:', password);
+
+        // For demonstration purposes, we'll just show an alert
+        alert('Login successful!');
+
+        // Clear the form
+        loginForm.reset();
+    });
+});
