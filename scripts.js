@@ -118,3 +118,12 @@ document.addEventListener('DOMContentLoaded', function() {
         loginForm.reset();
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // You can add any JavaScript functionality you need here.
+    // For example, you could add a feature to dynamically load more content.
+
+    console.log('Page loaded successfully.');
+});
+
